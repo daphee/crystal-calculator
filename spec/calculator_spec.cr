@@ -9,5 +9,9 @@ describe "Calculator" do
 		it "correctly evaluates 3+4*2/(1-5)^2^3" do
 			Calculator.evaluate("3 + 4 * 2 / ( 1 - 5 ) ^ 2 ^ 3").should eq (3.0 + 8.0/65536.0)
 		end
+
+		it "correctly evaluates (3 - 1) ^ 3 + 5" do
+			Calculator.evaluate("(3 - 1) ^ 3 + 5").should eq 13
+		end
 	end
 end
